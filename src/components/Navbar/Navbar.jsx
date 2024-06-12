@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className=' flex items-center gap-4'>
             <HiMenuAlt1 onClick={showMenuList} className=' text-3xl sm:hidden cursor-pointer'/>
             <div className=' text-xl text-Teal uppercase tracking-wide font-bold'>
-              <img className=' w-auto h-[80px]' src="src\images\Main Logo.png" alt="" />
+              <img className=' w-auto h-[80px]' src="https://res.cloudinary.com/dqydgc2ky/image/upload/v1718206470/Main_Logo_fgtobj.png" alt="" />
             </div>
           </div>
           <div className=' sm:flex items-center hidden'>
