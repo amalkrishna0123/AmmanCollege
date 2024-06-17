@@ -3,6 +3,7 @@ import teacher from "../../images/teacher.png"
 import teacher2 from "../../images/teacher2.png"
 import {accordions} from "../../Data"
 import Accordion from './Accordion'
+import MissionVission from './MissionVission'
 
 const Teacher = () => {
   return (
@@ -32,6 +33,11 @@ const Teacher = () => {
           <img src={teacher2} alt="" />
         </div>
       </div>
+
+      <div className=' mt-12 max-w-[700px] mx-auto'>
+        <MissionVission />
+      </div>
+      
       <div className=' text-center my-8 font-bold sm:text-[1.875rem] text-[1.5rem]'>
         Frequently <span className=' text-Teal'>Asked Questions</span>
       </div>

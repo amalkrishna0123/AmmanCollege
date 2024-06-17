@@ -19,3 +19,12 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.Misson-bg{
+    border: solid 2px #2F6C6D;
+    border-radius: 10px 40px;
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px 40px;
+    padding: 20px;
+}

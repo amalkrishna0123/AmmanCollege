@@ -7,7 +7,7 @@ const Home = () => {
     <div className='section' id='home'>
       <div className=' md:flex items-center justify-center'>
         <div>
-          <div className=' font-bold text-sm text-Teal mb-4'>Lorem, ipsum dolor sit amet consectetur</div>
+          <div className=' font-bold text-sm text-Teal mb-4'>SRI AMMAN COLLEGE OF NURSING</div>
           <div className=' sm:text-[2.5rem] text-[1.825rem] font-bold'>
             Lorem ipsum<br /> Lorem ipsum dolor sit<br /> Lorem, ipsum dolor.
           </div>
