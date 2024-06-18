@@ -1,10 +1,19 @@
 import React from 'react'
+import Chairman from "../../images/chairman.jpg"
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 
 const MissionVission = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
-    <div className=' p-10 pb-28'>
-      <div className=' mb-8'>
+    <div className=' p-10 pb-28 md:flex md:items-center justify-center gap-10'>
+      <motion.div   ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className=' mb-8'>
         <div className='text-center font-bold text-[1.879rem] mb-10'>Mission & <span className=' text-Teal'>Vision</span></div>
         <div className=' '>
           <div className=' Misson-bg mb-10 shadow-md'>
@@ -23,10 +32,10 @@ const MissionVission = () => {
           </div>
         </div>
 
-      </div>
+      </motion.div  >
       <div className='  mx-auto text-center'>
         <div className='w-[200px] h-[200px] mx-auto rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-5'>
-          <img className='w-full h-full object-cover bg-top mb-2 rounded-lg' src="https://res.cloudinary.com/dqydgc2ky/image/upload/v1718616701/ChairmanOrg_svw8um.jpg" alt="" />
+          <img className='w-full h-full object-cover mb-2 rounded-lg' src={Chairman} alt="" />
         </div>
         <div className=' font-semibold'>Our Chairman</div>
         <div className=' font-bold text-Teal'>Mr.Pon Selvaraj</div>

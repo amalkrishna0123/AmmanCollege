@@ -1,11 +1,18 @@
 import React from 'react'
-import { motion } from "framer-motion"
+import { motion, useInView } from "framer-motion"
+import { useRef } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
     <div className='section' id='contact'>
-      <div className=' text-center max-w-[600px] mx-auto mb-10'>
+      <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}   className=' text-center max-w-[600px] mx-auto mb-10'>
         <div className=' sm:text-3xl text-2xl font-bold mb-5'>Subscribe <span className=''>Newsletter</span></div>
         <p className=' text-sm leading-7 text-gray'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga nihil dolorum doloremque modi iste nisi, natus doloribus voluptatibus nulla a reprehenderit, vitae consequatur! Error illo dicta explicabo quia repellendus! Lorem ipsum dolor sit amet.</p>
         <motion.form className=' mt-5'
@@ -16,14 +23,23 @@ const Contact = () => {
           <input type="text" placeholder='Enter your Email Address' className=' sm:p-3 text-sm p-2 outline-none shadow-md sm:w-72 w-60' />
           <button className=' text-sm text-white bg-Teal sm:p-3 p-2 shadow-md font-medium'>Subscribe</button>
         </motion.form>
-      </div>
+      </motion.div>
 
       <div>
-      <div className='font-bold text-[1.5rem] text-center mb-5'>Contact for more details</div>
+      <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className='font-bold text-[1.5rem] text-center mb-5'>Contact for more details</motion.div>
       <div>
         <div className='flex items-center gap-4 justify-center'>
-          <div className='text-green-600'><FaPhoneAlt /></div>
-          <div className='text-center font-semibold text-teal-600'>+91 9746897234</div>
+          <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className='text-green-600'><FaPhoneAlt /></motion.div>
+          <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }} className='text-center font-semibold text-teal-600'>+91 9746897234</motion.div>
         </div>
         <div className='flex justify-center mt-4'>
           <iframe 

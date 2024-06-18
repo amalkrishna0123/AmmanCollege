@@ -1,6 +1,8 @@
 import React from 'react'
 import {AiOutlineUser, AiOutlineStar} from "react-icons/ai"
 
+
+
 const Courses = ({image,category,title,participants,rating,price}) => {
   return (
     <div>
