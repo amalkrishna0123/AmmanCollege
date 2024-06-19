@@ -24,6 +24,11 @@ import Image3 from "./images/img3.jpg"
 import Image4 from "./images/img4.jpg"
 import Image5 from "./images/img5.jpg"
 
+import Nursing1 from "./images/nursing1.jpg"
+import Nursing2 from "./images/nursing2.jpg"
+import Nursing3 from "./images/nursing3.jpg"
+
+
 
 export const navLinks = [
     {
@@ -55,21 +60,21 @@ export const navLinks = [
 
 export const categories = [
     {
-        id : 1,
-        icon : <FaUserDoctor/>,
-        category: "B.Sc Nursing"
+      id: 1,
+      img: Nursing2,
+      category: "Academic Excellence"
     },
     {
-        id : 2,
-        icon : <FaUserDoctor/>,
-        category: "B.Sc Nursing"
+      id: 2,
+      img: Nursing1,
+      category: "Clinical Training"
     },
     {
-        id : 3,
-        icon : <FaUserDoctor/>,
-        category: "B.Sc Nursing"
-    },
-]
+      id: 3,
+      img: Nursing3,
+      category: "Professional Development"
+    }
+  ];
 
 export const courses = [
     {

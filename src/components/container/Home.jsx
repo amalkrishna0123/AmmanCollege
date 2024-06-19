@@ -18,7 +18,7 @@ const Home = () => {
           </motion.div>
           <motion.p initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
-      transition={{ duration: 2, ease: "easeInOut" }}  className='text-sm leading-7 text-gray max-w-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis labore odit sequi voluptas, libero officia error doloribus impedit est consequatur velit aliquid maiores non tempore.</motion.p>
+      transition={{ duration: 2, ease: "easeInOut" }}  className='text-sm leading-7 text-gray max-w-sm'>At Sri Amman College of Nursing, we provide quality nursing education so our graduates can offer compassionate and high-standard care in hospitals, communities, and beyond.</motion.p>
           <div className='mt-6'>
             <button className='px-6 py-3 font-bold text-white bg-Teal  rounded-lg mr-4 text-sm'>Get Started</button>
             <button className=' px-6 py-3 font-bold border border-solid border-gray rounded-lg text-sm'>Discover</button>

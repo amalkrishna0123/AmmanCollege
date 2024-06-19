@@ -9,7 +9,7 @@ const MissionVission = () => {
   const inView = useInView(ref, { once: true });
 
   return (
-    <div className=' p-10 pb-28 md:flex md:items-center justify-center gap-10'>
+    <div className=' p-10 pb-28 sm:flex sm:items-center justify-center gap-10'>
       <motion.div   ref={ref}
       initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
