@@ -42,9 +42,8 @@ const Course = () => {
           <div>
             <img src={Nurse} className=' object-cover w-full h-[300px] rounded-lg' alt="" />
           </div>
-          <div className=' text-center text-white p-2 md:text-2xl'>
-            <div>Pass in PUC / +2</div>
-            <div>Must have completed 17 years of age by 31st December of the year of admission.</div>
+          <div className=' text-center text-white p-2 md:text-2xl text-sm sm:text-lg'>
+            <div>To pursue a B.Sc Nursing course, candidates must have passed <strong>Class 12</strong> in the <strong>Science</strong> stream with PCB (Physics, Chemistry, Biology) subjects.</div>
           </div>
 
         </div>
