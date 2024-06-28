@@ -2,6 +2,8 @@ import React from 'react'
 import { motion, useInView } from "framer-motion"
 import { useRef } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -31,7 +33,7 @@ const Contact = () => {
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
       transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className='font-bold text-[1.5rem] text-center mb-5'>Contact for more details</motion.div>
       <div>
-        <div className='flex items-center gap-4 justify-center'>
+        <div className='flex items-center gap-4 justify-center mb-2'>
           <motion.div ref={ref}
       initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
@@ -39,8 +41,32 @@ const Contact = () => {
           <motion.div ref={ref}
       initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }} className='text-center font-semibold text-teal-600'>+91 9746897234</motion.div>
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }} className='text-center font-semibold text-teal-600'>+91 8438747100, +91 8807558867</motion.div>
         </div>
+
+        <div className='flex items-center gap-4 justify-center mb-3'>
+          <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className='text-green-600'><MdEmail /></motion.div>
+          <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }} className='text-center font-semibold text-teal-600'>ammancollegeinfo@gmail.com</motion.div>
+        </div>
+
+        
+        <div className='flex items-center gap-4 justify-center mb-5'>
+          <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className='text-green-600'><FaLocationDot /></motion.div>
+          <motion.div ref={ref}
+      initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+      animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }} className='text-center font-semibold text-teal-600'>Pothavur, Inampuliyur, Srirangam TK, Post, <br /> Tamil Nadu 639103</motion.div>
+        </div>
+        
         <div className='flex justify-center mt-4'>
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7288.014707386012!2d78.57339483124352!3d10.780929929706463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa5f78b1d1f2b1%3A0xf6a5b64b9c29e8a!2sSri%20Amman%20College%20of%20Nursing!5e0!3m2!1sen!2sin!4v1718619505899!5m2!1sen!2sin" 

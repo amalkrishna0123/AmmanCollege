@@ -8,13 +8,13 @@ const Home = () => {
     <div className='section' id='home'>
       <div className=' md:flex items-center justify-center'>
         <div>
-          <motion.div initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+          {/* <motion.div initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
-      transition={{ duration: 2, ease: "easeInOut" }}   className=' font-bold text-sm text-Teal mb-4'>SRI AMMAN COLLEGE OF NURSING</motion.div>
+      transition={{ duration: 2, ease: "easeInOut" }}   className=' font-bold text-sm text-Teal mb-4'>SRI AMMAN COLLEGE OF NURSING</motion.div> */}
           <motion.div initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
       transition={{ duration: 2, ease: "easeInOut" }}   className=' sm:text-[2.5rem] text-[1.825rem] font-bold'>
-            Welcome To<br /> Sri Amman College of Nursing<br /> 
+            Welcome To<br /> <span className=' text-Teal'>Sri Amman College of Nursing</span><br /> 
           </motion.div>
           <motion.p initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
