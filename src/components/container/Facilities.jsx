@@ -8,7 +8,7 @@ import Sundaram from "../../images/Sundaram.jpg"
 const Facilities = () => {
   return (
     <div className=' grid place-items-center gap-10 md:grid-cols-3 sm:grid-cols-2'>
-      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg'>
+      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <div className=' w-full h-[70%] bg-red-700 rounded-lg'>
             <img className=' w-full h-full object-cover rounded-lg' src={Trichy} alt="" />
         </div>
@@ -17,7 +17,7 @@ const Facilities = () => {
         </div>
       </div>
 
-      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg'>
+      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <div className=' w-full h-[70%] bg-red-700 rounded-lg'>
             <img className=' w-full h-full object-cover rounded-lg' src={Labs} alt="" />
         </div>
@@ -26,7 +26,7 @@ const Facilities = () => {
         </div>
       </div>
 
-      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg'>
+      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <div className=' w-full h-[70%] bg-red-700 rounded-lg'>
             <img className=' w-full h-full object-cover rounded-lg' src={Hostel} alt="" />
         </div>
@@ -34,7 +34,7 @@ const Facilities = () => {
             <div className='text-sm font-medium text-center mt-10 text-white'>Premium Hostels</div>
         </div>
       </div>
-      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg'>
+      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <div className=' w-full h-[70%] bg-red-700 rounded-lg'>
             <img className=' w-full h-full object-cover rounded-lg' src={Hospital} alt="" />
         </div>
@@ -43,7 +43,7 @@ const Facilities = () => {
         </div>
       </div>
 
-      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg'>
+      <div className=' w-[250px] h-[300px] bg-Teal rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <div className=' w-full h-[70%] bg-red-700 rounded-lg'>
             <img className=' w-full h-full object-cover rounded-lg' src={Sundaram} alt="" />
         </div>

@@ -64,7 +64,7 @@ const Contact = () => {
           <motion.div ref={ref}
       initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }} className='text-center font-semibold text-teal-600'>Pothavur, Inampuliyur, Srirangam TK, Post, <br /> Tamil Nadu 639103</motion.div>
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }} className='text-center font-semibold text-teal-600'>Pothavur,Thongamalai road,<br /> Inampuliyur, Srirangam TK, Post, <br /> Tamil Nadu 639103</motion.div>
         </div>
         
         <div className='flex justify-center mt-4'>

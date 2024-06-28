@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className=' text-xl text-Teal uppercase tracking-wide font-bold'>
               <img className=' w-auto h-[80px]' src="https://res.cloudinary.com/dqydgc2ky/image/upload/v1718206470/Main_Logo_fgtobj.png" alt="" />
             </div>
-            <div className=' text-Teal font-bold'>SRI AMMAN COLLEGE OF NURSING</div>
+            <div className=' text-Teal font-bold text-sm sm:text-base md:text-lg'>SRI AMMAN COLLEGE OF NURSING</div>
           </div>
           <div className=' sm:flex items-center hidden'>
             {navLinks.map(navlink => {
