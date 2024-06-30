@@ -2,10 +2,11 @@ import React from 'react'
 import hero from "../../images/bannerimg.png"
 import {logos} from "../../Data"
 import {motion} from "framer-motion"
+import MissionVission from './MissionVission'
 
 const Home = () => {
   return (
-    <div className='section' id='home'>
+    <div className='section py-36' id='home'>
       <div className=' md:flex items-center justify-center'>
         <div>
           {/* <motion.div initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
@@ -40,6 +41,11 @@ const Home = () => {
             )
           })}
         </div> */}
+      </div>
+
+      {/* Mission & Vision */}
+      <div className=' mt-12 max-w-[700px] mx-auto'>
+        <MissionVission />
       </div>
     </div>
   )

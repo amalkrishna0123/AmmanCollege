@@ -9,11 +9,20 @@ const MissionVission = () => {
   const inView = useInView(ref, { once: true });
 
   return (
-    <div className=' p-10 sm:flex sm:items-center justify-center gap-10'>
+    <div className=' p-10 sm:flex sm:justify-center sm:items-center gap-10'>
+      <div className='  mx-auto text-center sm:row-start-1 sm:col-start-1 sm:col-span-2'>
+        <div className='w-[200px] h-[200px] mx-auto rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-5'>
+          <img className='w-full h-full object-cover mb-2 rounded-lg' src={Chairman} alt="" />
+        </div>
+        <div className=' font-semibold'>Our Chairman</div>
+        <div className=' font-bold text-Teal'>Mr.Pon Selvaraj</div>
+        <div className='text-sm text-gray'>Sri Amman Group of Educational Institution</div>
+      </div>
+
       <motion.div   ref={ref}
       initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className=' mb-8'>
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className=' mb-8 sm:col-span-2'>
         <div className='text-center font-bold text-[1.879rem] mb-10'>Mission & <span className=' text-Teal'>Vision</span></div>
         <div className=' '>
           <div className=' Misson-bg mb-10 shadow-md'>
@@ -33,14 +42,6 @@ const MissionVission = () => {
         </div>
 
       </motion.div  >
-      <div className='  mx-auto text-center'>
-        <div className='w-[200px] h-[200px] mx-auto rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-5'>
-          <img className='w-full h-full object-cover mb-2 rounded-lg' src={Chairman} alt="" />
-        </div>
-        <div className=' font-semibold'>Our Chairman</div>
-        <div className=' font-bold text-Teal'>Mr.Pon Selvaraj</div>
-        <div className='text-sm text-gray'>Sri Amman Group of Educational Institution</div>
-      </div>
     </div>
   )
 }

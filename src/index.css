@@ -9,7 +9,7 @@
         @apply w-full
     }
     .section{
-        @apply container mx-auto py-24 px-6 
+        @apply container mx-auto py-5 px-2 
     }
     .animate-slide:hover{
         animation-play-state: paused;

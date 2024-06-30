@@ -34,10 +34,10 @@ const Teacher = () => {
       initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
       transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className=' pl-5'>
-          <div className=' font-bold sm:text-[1.875rem]  text-[1.5rem] mb-5'>
+          <div className=' font-bold sm:text-[1.875rem]  text-[1.5rem] mb-5 text-wrap'>
           Preparing<span className='text-Teal'>Compassionate</span> <br /> and Skilled Nurses
           </div>
-          <p className=' text-sm leading-7 text-gray mb-5'>Our vision is to prepare nurses who exemplify excellence in both hospital and community settings, showing dedication, devotion, compassion, and kindness. We offer accessible and affordable high-quality education to students from diverse backgrounds, ensuring all levels of nursing practice are developed. Our teachers and staff support students in becoming skilled nurse practitioners, ready to meet community healthcare needs.
+          <p className=' text-sm leading-7 text-gray mb-5 text-wrap'>Our vision is to prepare nurses who exemplify excellence in both hospital and community settings, showing dedication, devotion, compassion, and kindness. We offer accessible and affordable high-quality education to students from diverse backgrounds, ensuring all levels of nursing practice are developed. Our teachers and staff support students in becoming skilled nurse practitioners, ready to meet community healthcare needs.
 
 
 
@@ -52,9 +52,9 @@ const Teacher = () => {
         </div>
       </div>
 
-      <div className=' mt-12 max-w-[700px] mx-auto'>
+      {/* <div className=' mt-12 max-w-[700px] mx-auto'>
         <MissionVission />
-      </div>
+      </div> */}
       
       {/* <div className=' text-center my-8 font-bold sm:text-[1.875rem] text-[1.5rem]'>
         Frequently <span className=' text-Teal'>Asked Questions</span>
