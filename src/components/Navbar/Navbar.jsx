@@ -23,8 +23,8 @@ const Navbar = () => {
   return (
     <div className={`${active? " shadow-lg bg-Solitude" : ""} fixed top-0 w-full left-0 z-20 `}>
       <div>
-        <div className={`${active? " py-2 transition-all duration-500" : "py-4"} container  mx-auto flex items-center justify-between px-2 `}>
-          <div className=' flex items-center xs:gap-4'>
+        <div className={`${active? " py-2 transition-all duration-500" : "py-4"} container  mx-auto flex items-center justify-between `}>
+          <div className=' flex items-center xs:gap-4 gap-2'>
             <HiMenuAlt1 onClick={showMenuList} className=' text-3xl sm:hidden cursor-pointer'/>
             <div className=' text-xl text-Teal uppercase tracking-wide font-bold'>
               <img className=' w-auto h-[80px]' src="https://res.cloudinary.com/dqydgc2ky/image/upload/v1718206470/Main_Logo_fgtobj.png" alt="" />
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
       </div>
           <div className=' flex justify-center items-center sm:hidden mb-3'>
-            <ul className=' flex text-[9px]'>
+            <ul className=' flex text-[12px]'>
               <li id='1' className=' border px-2 xs:px-5 xs:text-sm border-Teal cursor-pointer'>
               <Link to='home' duration={500} smooth={true} spy={true} offset={-150}>Home</Link></li>
               <li id='2' className=' border px-2 xs:px-5 xs:text-sm border-Teal cursor-pointer'><Link to='about' duration={500} smooth={true} spy={true} offset={-150}>About</Link></li>
