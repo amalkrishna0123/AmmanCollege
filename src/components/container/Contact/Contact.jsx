@@ -31,7 +31,7 @@ const Contact = () => {
       <motion.div ref={ref}
       initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
       animate={inView ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className='font-bold text-[1.5rem] text-center mb-5'>Contact for more details</motion.div>
+      transition={{ duration: 2, ease: [0.42, 0, 0.58, 1] }}  className='font-bold text-[1.5rem] text-center mb-5'>Contact us for admission</motion.div>
       <div>
         <div className='flex items-center gap-4 justify-center mb-2'>
           <motion.div ref={ref}
