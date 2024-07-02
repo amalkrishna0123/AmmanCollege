@@ -49,7 +49,7 @@ export const navLinks = [
     {
         id : 4,
         href : "teacher",
-        link : "Teacher"
+        link : "Gallery"
     },
     {
         id : 1,
